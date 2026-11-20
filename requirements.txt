@@ -1,0 +1,9 @@
+torch
+torchvision
+transformers
+opencv-python
+matplotlib
+numpy
+pillow
+requests
+wget
