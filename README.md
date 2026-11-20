@@ -49,15 +49,7 @@ MedCLIP's pretrained weights and the Hugging Face encoders download on first run
 
 ### Baseline: CLIP on a natural image
 
-Before moving to the medical model, the same attack-and-surgery pipeline was validated on OpenAI CLIP (ViT-B/16) with CLIP Surgery on a natural image. The attack suppresses the "bench" class:
-
-| Clean vs. adversarial similarity ("bench") | Clean + surgery vs. adversarial + surgery ("bench") |
-|---|---|
-| ![](results/clip_natural_image/fig_00.png) | ![](results/clip_natural_image/fig_08.png) |
-
-| Adversarial vs. adversarial + surgery ("person") | Original / adversarial / perturbation ×50 |
-|---|---|
-| ![](results/clip_natural_image/fig_07.png) | ![](results/clip_natural_image/fig_12.png) |
+Before moving to the medical model, the same attack-and-surgery pipeline was validated on OpenAI CLIP (ViT-B/16) with CLIP Surgery on a natural image. 
 
 What this shows: the attack scatters the raw similarity map for the attacked class, and feature surgery does not fully recover it. For a non-attacked class ("person"), surgery largely restores a faithful map. All 13 figures are in `results/clip_natural_image/`.
 
